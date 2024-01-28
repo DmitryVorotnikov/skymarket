@@ -36,7 +36,6 @@ DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS')]
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -44,6 +43,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Apps
+    'ads',
+    'comments',
+
+    # Users
+    'users',
+    ''
+    # Packages
+    'rest_framework',
+    'drf_yasg',
+    'django_filters',
+    'corsheaders',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
