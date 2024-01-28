@@ -3,3 +3,6 @@
 .idea
 __pycache__
 DRAFT.md
+/db.sqlite3
+/.coverage
+/celerybeat-schedule.db

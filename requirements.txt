@@ -1,3 +1,14 @@
-asgiref==3.7.2
-Django==5.0.1
-sqlparse==0.4.4
+Django
+python-dotenv
+psycopg2
+pillow
+ipython
+django-phonenumber-field
+phonenumbers
+djangorestframework
+djangorestframework-simplejwt
+django_filter
+drf-yasg
+django-cors-headers
+redis
+celery
