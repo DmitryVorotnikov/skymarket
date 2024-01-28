@@ -225,3 +225,18 @@ custom_csrf_origins = [origin.strip() for origin in custom_csrf_origins if origi
 # Объединение кастомных источников с оригинальными.
 CORS_ALLOWED_ORIGINS += custom_cors_origins
 CSRF_TRUSTED_ORIGINS += custom_csrf_origins
+
+# Celery
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'  # URL-адрес брокера результатов.
+
+# todo Это исправить когда докер появится!!!
+# CELERY_BROKER_URL = 'redis://redis:6379'
+# CELERY_RESULT_BACKEND = 'redis://redis:6379'  # URL-адрес брокера результатов.
+
+CELERY_TIMEZONE = os.getenv('CELERY_TIMEZONE')
+
+CELERY_TASK_TRACK_STARTED = True  # Флаг отслеживания выполнения задач.
+
+CELERY_TASK_TIME_LIMIT = 30 * 60  # Максимальное время на выполнение задачи (в секундах) (30 минут).
