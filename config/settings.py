@@ -197,3 +197,28 @@ SWAGGER_SETTINGS = {  # Для авторизации по токену.
         }
     }
 }
+
+# CORS
+CORS_ALLOWED_ORIGINS = [  # Список источников с которых разрешено делать safe-запросы (без CSRF-токена).
+    'https://localhost:8000',
+    'https://127.0.0.1:8000',
+]
+
+CSRF_TRUSTED_ORIGINS = [  # Список доверенных источников с которых допускаются запросы с CSRF-токенами.
+    'https://localhost:8000',
+    'https://127.0.0.1:8000',
+]
+
+CORS_ALLOW_ALL_ORIGINS = False  # Разрешает абсолютно всем источникам отправлять запросы.
+
+# Получение значения переменных окружения, если они установлены.
+custom_cors_origins = os.getenv('CUSTOM_CORS_ORIGINS', '').split(',')
+custom_csrf_origins = os.getenv('CUSTOM_CSRF_ORIGINS', '').split(',')
+
+# Проверка, что пустые значения не добавляются.
+custom_cors_origins = [origin.strip() for origin in custom_cors_origins if origin.strip()]
+custom_csrf_origins = [origin.strip() for origin in custom_csrf_origins if origin.strip()]
+
+# Объединение кастомных источников с оригинальными.
+CORS_ALLOWED_ORIGINS += custom_cors_origins
+CSRF_TRUSTED_ORIGINS += custom_csrf_origins
