@@ -12,3 +12,4 @@ drf-yasg
 django-cors-headers
 redis
 celery
+flake8
