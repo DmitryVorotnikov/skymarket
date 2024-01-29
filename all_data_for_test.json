@@ -1,0 +1,341 @@
+[
+  {
+    "model": "users.user",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$U4QICkN9pCP09jLrqQmXh8$wul28uXDcjUdrksS+vmswKcfVpTEyKLMNtS+0jPNx5Y=",
+      "last_login": null,
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-29T15:54:01Z",
+      "email": "test@skypro.ru",
+      "phone": "+79181207546",
+      "image": "",
+      "role": null,
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$ecFgLJiJT1RSilktEVWmJX$U7meJ9tlGpAbt7bG0zTuoGSC/7hbDvHpY+vLgb6FppM=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Дмитрий",
+      "last_name": "Соколов2222",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-29T15:54:54Z",
+      "email": "test1@gmail.com",
+      "phone": "+79183862853",
+      "image": "",
+      "role": "MANAGER",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$2WHu7Ht5bKgIchGv6EOztR$SZ305tNVknKQbYbr2gdL333co3ipIpaTWjRXnYOjKgM=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Михаил",
+      "last_name": "Смирнов",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-29T15:55:12Z",
+      "email": "test2@gmail.com",
+      "phone": "+79183862853",
+      "image": "",
+      "role": "USER",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$pK18cjjF4EIJLC2bwzqGbG$QSwafV9yAq+g9wTvmKEocIZQz0BJRiRwwOpxM2qgH6A=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Петр",
+      "last_name": "Петров",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-29T15:55:27Z",
+      "email": "test3@gmail.com",
+      "phone": "+79183862853",
+      "image": "",
+      "role": "USER",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 18,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$CjxlAKMKf2zcD3Ju3njD7A$EUmMR4jnS4WwT9RDTAr5RYRnYHpG1cHJgAjT690mMO8=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-29T15:55:39Z",
+      "email": "test4@gmail.com",
+      "phone": "+79183862853",
+      "image": "",
+      "role": "USER",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 2,
+    "fields": {
+      "user": 16,
+      "title": "Шкаф, почти новый",
+      "price": 10000,
+      "description": "Покупал в шведском магазине.",
+      "image": "",
+      "created_at": "2024-01-29T19:00:17.596Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 3,
+    "fields": {
+      "user": 16,
+      "title": "Автомобиль",
+      "price": 200000,
+      "description": "Салонам не звонить!",
+      "image": "",
+      "created_at": "2024-01-29T19:01:02.250Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 4,
+    "fields": {
+      "user": 16,
+      "title": "Кухонный гарнитур",
+      "price": 10000,
+      "description": "Модульный, б/у",
+      "image": "",
+      "created_at": "2024-01-29T19:01:26.725Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 5,
+    "fields": {
+      "user": 16,
+      "title": "Кресло",
+      "price": 10000,
+      "description": "Хорошое кожаное кресло, почти не скрипит.",
+      "image": "",
+      "created_at": "2024-01-29T19:02:36.326Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 6,
+    "fields": {
+      "user": 16,
+      "title": "Скейтборд",
+      "price": 10000,
+      "description": "Почти новый красивый скейт!",
+      "image": "",
+      "created_at": "2024-01-29T19:03:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 7,
+    "fields": {
+      "user": 16,
+      "title": "Матрас",
+      "price": 5000,
+      "description": "Хороший матрас Аскона.",
+      "image": "",
+      "created_at": "2024-01-29T19:05:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 8,
+    "fields": {
+      "user": 17,
+      "title": "Стол обеденный",
+      "price": 7000,
+      "description": "Деревянный, стильный. Вместительный и прочный.",
+      "image": "",
+      "created_at": "2024-01-29T19:06:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 9,
+    "fields": {
+      "user": 17,
+      "title": "PlayStation 4",
+      "price": 15000,
+      "description": "В отличном состоянии. Подойдет для игр и стриминга.",
+      "image": "",
+      "created_at": "2024-01-29T19:07:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 10,
+    "fields": {
+      "user": 18,
+      "title": "Шкаф-купе",
+      "price": 20000,
+      "description": "Просторный, с зеркальными дверями. Идеальное решение для хранения.",
+      "image": "",
+      "created_at": "2024-01-29T19:08:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 11,
+    "fields": {
+      "user": 18,
+      "title": "Велосипед Scott",
+      "price": 25000,
+      "description": "Легкий, скоростной. Подходит как для города, так и для тренировок.",
+      "image": "",
+      "created_at": "2024-01-29T19:09:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 12,
+    "fields": {
+      "user": 18,
+      "title": "Угловой диван",
+      "price": 6000,
+      "description": "Большой, комфортный. Легко трансформируется в спальное место.",
+      "image": "",
+      "created_at": "2024-01-29T19:11:33.820Z"
+    }
+  },
+  {
+    "model": "ads.ad",
+    "pk": 13,
+    "fields": {
+      "user": 18,
+      "title": "iPhone X",
+      "price": 60000,
+      "description": "Идеальное состояние, оригинальная упаковка.",
+      "image": "",
+      "created_at": "2024-01-29T19:14:33.820Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 1,
+    "fields": {
+      "user": 16,
+      "ad": 2,
+      "text": "Вау какой потрясающий шкаф!",
+      "created_at": "2024-01-29T20:21:36.157Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 2,
+    "fields": {
+      "user": 16,
+      "ad": 2,
+      "text": "Мне бы такой подошел в спальную комнату",
+      "created_at": "2024-01-29T20:21:55.574Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 3,
+    "fields": {
+      "user": 16,
+      "ad": 3,
+      "text": "Подскажите, какой пробег?",
+      "created_at": "2024-01-29T20:22:19.088Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 4,
+    "fields": {
+      "user": 17,
+      "ad": 3,
+      "text": "Есть ли сервисная книжка?",
+      "created_at": "2024-01-29T20:23:19.088Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 5,
+    "fields": {
+      "user": 17,
+      "ad": 4,
+      "text": "Какие модули в комплекте?",
+      "created_at": "2024-01-29T20:24:19.088Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 6,
+    "fields": {
+      "user": 17,
+      "ad": 4,
+      "text": "Есть ли возможность доставки?",
+      "created_at": "2024-01-29T20:25:19.088Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 7,
+    "fields": {
+      "user": 18,
+      "ad": 8,
+      "text": "Какие габариты?",
+      "created_at": "2024-01-29T20:26:19.088Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 8,
+    "fields": {
+      "user": 18,
+      "ad": 10,
+      "text": "Какие возможности по доставке?",
+      "created_at": "2024-01-29T20:27:19.088Z"
+    }
+  },
+  {
+    "model": "comments.comment",
+    "pk": 9,
+    "fields": {
+      "user": 18,
+      "ad": 10,
+      "text": "Сколько отделений внутри?",
+      "created_at": "2024-01-29T20:28:19.088Z"
+    }
+  }
+]
