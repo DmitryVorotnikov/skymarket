@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
     # Users
     'users',
-    ''
+
     # Packages
     'rest_framework',
     'drf_yasg',
