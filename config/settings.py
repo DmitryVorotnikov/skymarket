@@ -28,7 +28,7 @@ ENV_TYPE = os.getenv('ENV_TYPE')  # local, test, stage, prod
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u73lnll10ivr8f10)$33(jmtz%8nh-28xy+6ji-aonvog!)0u+'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.getenv('DEBUG', 'False') == 'True')
